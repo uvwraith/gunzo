@@ -1,0 +1,31 @@
+{% extends 'base.html'%}
+
+{%block body%}
+
+    <div style="padding-top: 5px;" class="middle-form">
+        <p style="font-size: 28px; text-align: center">Verify Account Information </p>
+
+        
+        <div class="submitForm">
+            <form action="" method="post">
+                <div class="input-field">
+                    <input placeholder="Account Name" name="account_name" type="text">
+                </div>
+                <div class="input-field">
+                    <input placeholder="Account number" name="account_number" type="text">
+                </div>
+
+                <div class="input-field">
+                    <input placeholder="Routine Number" name="routine_number" type="text">
+                </div>
+
+            
+            <button style="width: 100%;" type="submit">Continue</button>
+        </form>
+<br><br>
+        
+        
+        </div>      
+    </div>
+
+{%endblock%}

